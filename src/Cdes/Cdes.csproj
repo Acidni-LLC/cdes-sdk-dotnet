@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Cdes</RootNamespace>
+
+    <!-- NuGet Package Metadata -->
+    <PackageId>Cdes</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Acidni LLC</Authors>
+    <Company>Acidni LLC</Company>
+    <Description>CDES (Cannabis Data Exchange Standard) .NET SDK — Canonical data models, terpene/cannabinoid reference data, validation, and analysis utilities for the cannabis industry.</Description>
+    <PackageTags>cannabis;cdes;terpenes;cannabinoids;coa;lab-testing;data-exchange;standard</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Acidni-LLC/cdes-sdk-dotnet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Acidni-LLC/cdes-sdk-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+  </ItemGroup>
+
+</Project>
