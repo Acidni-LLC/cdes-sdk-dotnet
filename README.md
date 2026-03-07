@@ -5,7 +5,7 @@
 [![NuGet](https://img.shields.io/nuget/v/Cdes.svg)](https://www.nuget.org/packages/Cdes/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-The official .NET SDK for the **Cannabis Data Exchange Standard (CDES)** — an open-source data interchange specification for the cannabis industry. This package provides strongly-typed models, reference data for 30 terpenes and 9 cannabinoids, analysis utilities, and JSON serialization helpers.
+The official .NET SDK for the **Cannabis Data Exchange Standard (CDES)** — an open-source data interchange specification for the cannabis industry. This package provides strongly-typed models, reference data for 30 terpenes and 11 cannabinoids, analysis utilities, and JSON serialization helpers.
 
 ## Installation
 
@@ -95,9 +95,9 @@ Console.WriteLine($"{myrcene.DisplayName}: {myrcene.Hex}, {myrcene.BoilingPointC
 Console.WriteLine($"Aroma: {string.Join(", ", myrcene.Aroma)}");
 Console.WriteLine($"Effects: {string.Join(", ", myrcene.Therapeutic)}");
 
-// 9 standard cannabinoids with thresholds
+// 11 standard cannabinoids with thresholds and accessibility metadata
 var thc = CannabinoidLibrary.StandardCannabinoids["THC"];
-Console.WriteLine($"{thc.Name}: {thc.Hex}, range {thc.ThresholdMin}-{thc.ThresholdMax}%");
+console.WriteLine($"{thc.Name}: {thc.Hex}, range {thc.ThresholdMin}-{thc.ThresholdMax}%");
 ```
 
 ### Terpene Utilities
@@ -178,7 +178,7 @@ var indented = CdesJsonOptions.SerializeIndented(batch);
 | Type | Kind | Description |
 |------|------|-------------|
 | `TerpeneLibrary` | static class | 30 standard terpene definitions |
-| `CannabinoidLibrary` | static class | 9 standard cannabinoid definitions |
+| `CannabinoidLibrary` | static class | 11 standard cannabinoid definitions |
 | `TerpeneUtilities` | static class | Name normalization, color lookup, search |
 | `CannabinoidUtilities` | static class | Normalization, categorization, distance |
 | `CdesAnalyzer` | static class | Profile comparison and classification |
