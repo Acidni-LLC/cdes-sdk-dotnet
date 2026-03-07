@@ -33,4 +33,13 @@ public sealed record CannabinoidDefinition
 
     /// <summary>Maximum expected percentage (typical range).</summary>
     public double ThresholdMax { get; init; }
+
+    /// <summary>SVG pattern identifier for color-blind rendering.</summary>
+    public string? Pattern { get; init; }
+
+    /// <summary>Unicode shape for legend icons.</summary>
+    public string? Shape { get; init; }
+
+    /// <summary>Previous v1.2 hex color for migration reference.</summary>
+    public string? LegacyHex { get; init; }
 }
