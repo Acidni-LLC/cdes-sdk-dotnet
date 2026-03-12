@@ -8,7 +8,7 @@
 
     <!-- NuGet Package Metadata -->
     <PackageId>CDES</PackageId>
-    <Version>1.1.0</Version>
+    <Version>1.5.0</Version>
     <Authors>Acidni LLC</Authors>
     <Company>Acidni LLC</Company>
     <Description>CDES (Cannabis Data Exchange Standard) .NET SDK — Canonical data models, terpene/cannabinoid reference data, validation, and analysis utilities for the cannabis industry.</Description>
