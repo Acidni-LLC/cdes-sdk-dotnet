@@ -15,9 +15,9 @@ public class CannabinoidUtilitiesTests
     }
 
     [Theory]
-    [InlineData("THC", "#E74C3C")]
-    [InlineData("CBD", "#3498DB")]
-    [InlineData("CBN", "#E67E22")]
+    [InlineData("THC", "#B71C1C")]
+    [InlineData("CBD", "#1565C0")]
+    [InlineData("CBN", "#A0522D")]
     public void GetColor_ReturnsCorrectHex(string name, string expectedHex)
     {
         Assert.Equal(expectedHex, CannabinoidUtilities.GetColor(name));

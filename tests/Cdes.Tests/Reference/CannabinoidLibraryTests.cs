@@ -5,15 +5,15 @@ namespace Cdes.Tests.Reference;
 public class CannabinoidLibraryTests
 {
     [Fact]
-    public void StandardCannabinoids_ContainsNineEntries()
+    public void StandardCannabinoids_ContainsElevenEntries()
     {
-        Assert.Equal(9, CannabinoidLibrary.StandardCannabinoids.Count);
+        Assert.Equal(11, CannabinoidLibrary.StandardCannabinoids.Count);
     }
 
     [Fact]
-    public void MaxCannabinoids_IsNine()
+    public void MaxCannabinoids_IsEleven()
     {
-        Assert.Equal(9, CannabinoidLibrary.MaxCannabinoids);
+        Assert.Equal(11, CannabinoidLibrary.MaxCannabinoids);
     }
 
     [Theory]
@@ -26,6 +26,8 @@ public class CannabinoidLibraryTests
     [InlineData("CBDV")]
     [InlineData("CBDA")]
     [InlineData("THCA")]
+    [InlineData("CBGA")]
+    [InlineData("Delta-8 THC")]
     public void StandardCannabinoids_ContainsAllExpected(string name)
     {
         Assert.True(CannabinoidLibrary.StandardCannabinoids.ContainsKey(name));
@@ -37,7 +39,7 @@ public class CannabinoidLibraryTests
         var thc = CannabinoidLibrary.StandardCannabinoids["THC"];
 
         Assert.Equal("THC", thc.Name);
-        Assert.Equal("#E74C3C", thc.Hex);
+        Assert.Equal("#B71C1C", thc.Hex);
         Assert.Equal(0, thc.ThresholdMin);
         Assert.Equal(35, thc.ThresholdMax);
     }
@@ -48,21 +50,21 @@ public class CannabinoidLibraryTests
         var cbd = CannabinoidLibrary.StandardCannabinoids["CBD"];
 
         Assert.Equal("CBD", cbd.Name);
-        Assert.Equal("#3498DB", cbd.Hex);
+        Assert.Equal("#1565C0", cbd.Hex);
         Assert.Equal(0, cbd.ThresholdMin);
         Assert.Equal(25, cbd.ThresholdMax);
     }
 
     [Fact]
-    public void AllNames_HasNineEntries()
+    public void AllNames_HasElevenEntries()
     {
-        Assert.Equal(9, CannabinoidLibrary.AllNames.Count);
+        Assert.Equal(11, CannabinoidLibrary.AllNames.Count);
     }
 
     [Fact]
-    public void ColorPalette_HasNineEntries()
+    public void ColorPalette_HasElevenEntries()
     {
-        Assert.Equal(9, CannabinoidLibrary.ColorPalette.Count);
+        Assert.Equal(11, CannabinoidLibrary.ColorPalette.Count);
     }
 
     [Fact]

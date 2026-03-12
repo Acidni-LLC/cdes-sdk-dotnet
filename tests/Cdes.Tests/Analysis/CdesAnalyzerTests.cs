@@ -161,6 +161,7 @@ public class CdesAnalyzerTests
             ["THC"] = 25.0, ["CBD"] = 1.0, ["CBN"] = 0.5,
             ["CBG"] = 0.3, ["CBC"] = 0.1, ["THCV"] = 0.2,
             ["CBDV"] = 0.1, ["CBDA"] = 0.5, ["THCA"] = 28.0,
+            ["CBGA"] = 0.2, ["Delta-8 THC"] = 0.1,
         });
 
         var score = CdesAnalyzer.ScoreCompleteness(profile);
